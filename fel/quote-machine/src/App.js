@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
-import CameraIcon from "@material-ui/icons/PhotoCamera";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
@@ -99,15 +99,15 @@ const Album = () => {
     <React.Fragment>
       <AppBar position="relative">
         <Toolbar>
-          <CameraIcon className={classes.icon} />
+          <MenuBookIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
             FCC Projects: Random Quote Machine
           </Typography>
         </Toolbar>
       </AppBar>
-      <Container component="main" className={classes.main}>
+      <Container component="main" className={classes.main} maxWidth="md">
         {/* Hero unit */}
-        <Card id="quote-box" className={classes.card} maxWidth="sm">
+        <Card id="quote-box" className={classes.card}>
           <CardContent className={classes.cardContent}>
             <Typography
               id="text"
@@ -168,7 +168,7 @@ const Album = () => {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          <strong>Piboy Enterprises</strong> - Developing Simple Solutions
         </Typography>
         <Typography
           variant="subtitle1"
@@ -176,7 +176,11 @@ const Album = () => {
           color="textSecondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          Check out the source code and other projects on{" "}
+          <Link href="https://github.com/sflems/fccProjects" target="_blank">
+            GitHub
+          </Link>
+          .
         </Typography>
         <Copyright />
       </footer>
