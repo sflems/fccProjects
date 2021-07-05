@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/kitsgrow/piboy.ca/projects/fcc/fel
-    - /bin/cp -R build $DEPLOYPATH
+    - /bin/cp -R fel/quote-machine/build $DEPLOYPATH
     - /bin/mv $DEPLOYPATH/build $DEPLOYPATH/quote-machine
