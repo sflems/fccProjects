@@ -1,6 +1,5 @@
 ---
-# cPanel configuration to copy build folder to deployment location
-deployment:
+deployment: # cPanel configuration to copy build folder to deployment location
   tasks:
     - export DEPLOYPATH=/home/kitsgrow/piboy.ca/projects/fcc/fel/quote-machine
-    - /bin/cp fel/quote-machine/build/* $DEPLOYPATH
+    - /bin/cp -R fel/quote-machine/build/* $DEPLOYPATH
