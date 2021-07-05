@@ -1,5 +1,5 @@
-# cPanel configuration to copy build folder to deployment location
 ---
+# cPanel configuration to copy build folder to deployment location
 deployment:
   tasks:
     - export DEPLOYPATH=/home/kitsgrow/piboy.ca/projects/fcc/fel/
